@@ -1,0 +1,42 @@
+.hola {
+    color: black;
+}
+
+.pepe {
+    color: aqua;
+    font-size: 120px;
+
+}
+
+.aa {
+    color: blue;
+}
+
+.card {
+    background-color: brown;
+    color: wheat;
+    font-size: 35px;
+}
+
+
+.contenedor {
+    background-color:  #033268;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nombre {
+    font-size: 25px;
+}
+
+.edad {
+    font-size: 15px;
+}
+
+.correo {
+    font-size: 20px;
+    color: red;
+}
