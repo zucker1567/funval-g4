@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.padre {
+    border: 1px solid red;
+    position: absolute;   /* afecta al hijo  */
+    width: 330px;
+}
+
+html, 
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.caja {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja1 {
+    background-color: red;
+    position: relative;
+    top: 400px;
+    left: 230px;
+}
+.caja2 {
+    background-color: rgb(192, 192, 192);
+}
+.caja3 {
+    background-color: rgb(123, 97, 146);
+}
+.caja4 {
+    background-color: rgb(105, 97, 112);
+}
+.caja5 {
+    background-color: rgb(136, 127, 145);
+}

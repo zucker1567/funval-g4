@@ -1,0 +1,72 @@
+.caja1 {
+    background: skyblue;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    padding-bottom: 10%;
+    border: 2px solid #ebccd1;
+}
+
+
+.caja2 {
+    background: lightcoral;
+    border: 2px solid #ebccd1;
+} 
+.caja3 {
+    background: lightcoral;
+    margin: 30px;
+    border: 2px solid #ebccd1;
+}
+
+
+.caja4 {
+    background: black;
+    margin: 20px;
+    color: white;
+    border: 2px solid #ebccd1;
+}
+
+.caja5 {
+    background: black;
+    padding: 20px;
+    color: white;
+    border: 2px solid #ebccd1;
+}
+.caja6 {
+    background: black;
+    padding: 20px;
+    color: white;
+    border: 5px solid red;
+    border-right: dashed green;
+    border-bottom: 5px solid purple;
+    border-left: 5px solid blue;
+
+}
+.caja6 {
+    background: black;
+    padding: 20px;
+    color: white;
+    border: 5px solid red;
+    border-right: dashed green;
+    border-bottom: 5px solid purple;
+    border-left: 5px solid blue;
+
+}
+
+.caja7 {
+    display: flex;
+    color: white;
+    background: black;
+    padding: 0px 500px 60px 200px;
+
+
+}
+
+
+
+
+
+
+
+
+

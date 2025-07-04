@@ -1,0 +1,191 @@
+html body {
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+body {
+    margin: 0;
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    padding: 0;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+}
+
+.contenedor-padre {
+    display: flex;
+    flex-direction: column;
+    /* padding: 5px 20px 0px 20px; */
+    /* border: 1px solid white; */
+
+    
+}
+
+.hermano1 {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 300px;
+    padding-bottom: 25px;
+
+}
+
+#email {
+    background: #121212;
+    color: white;
+    width: 200px;
+}
+
+#password {
+    background: #121212;
+    color: white;
+    width: 200px;
+}
+
+
+.btn{
+    background: #0069ac;
+    color: white;
+    width: 210px;
+    height: 21px;
+    position: relative;
+    border-radius: 4%;
+    /* padding-right: 50px;
+    padding-left: 40px; */
+
+}
+
+.padrel{
+    /* display: inline; */
+    /* justify-content: center;
+    position: relative;
+    padding-left: 85px;
+    padding-right: 85px; */
+    /* border: 1px solid red; */
+    width: 70%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.hijol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rgb(238, 232, 232); */
+    width: 100%;
+    gap: 10px;
+}
+
+hr { 
+    display: flex;
+    width: 40%;
+    padding-bottom: -1%; /* no funciona el - solo llega a 1? */
+    border-bottom: -0.0px;
+}
+
+.caja-padre{
+    /* border: 1px solid red; */
+    width: 70%;
+}
+
+.btn-2{
+    width: 100%;
+}
+
+button{
+    background-color:#121212;
+    padding: 0px 0px 0px 0px;
+    color: #0069ac;
+    border: none; /* gracias dios */
+}
+
+.caja-hijo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.caja-nieto {
+    border-radius: 100%;
+    width: 23px;
+    height: 22px;
+    background: #0069ac;
+
+}
+
+#face {
+    color: #121212;
+}
+
+.hermano2 {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#rr{
+    color: #0069ac;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    color: white;
+    
+}
+
+
+.logo-padre {
+    display: flex;                /* no tocar */
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+p {
+
+    color: white;  /* es el numero 0 */
+}
+
+.centro {
+    font-size: 12px;
+    }
+h2 {
+    color: #0069ac;
+ }
+
+/* 
+.contenedor-padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightyellow;
+    min-height: 100%;
+    margin-bottom: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 120px;
+    margin-top: 15px;
+} */

@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.padre {
+    border: 1px solid red;
+    width: 330px;
+}
+
+html, 
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja {
+    height: 100px;
+    width: 300px;
+}
