@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    /* border: 1px solid blue; */
+    width: 120px;
+    height: 100px;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap; 
+    /* hace que sus hijos se pongan en columna dependeiendo 
+    2 factores que le afectan el ancho de padre y el tamaño
+     del hijo tiene que estar apegado al ancho del padre */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.caja {
+    border: 1px solid red;
+    width: 30px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
