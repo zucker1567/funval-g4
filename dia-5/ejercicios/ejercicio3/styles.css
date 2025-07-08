@@ -5,7 +5,7 @@
 }
 
 /* * {
-  outline: 1px solid red;
+outline: 1px solid red;
 }
  */
 
@@ -16,9 +16,8 @@ html,body{
         align-items: center;
         justify-content: center;
         height: 100%;
-        width: 70%;
-        gap: 5px;
-        border: 1px solid red;
+        width: 100%; 
+        /* border: 1px solid red; */
     }
 
 
@@ -34,119 +33,16 @@ html,body{
 @media (max-width: 575.98px) {
   /* estilos pantallas menores a 576px */
     
-    /* html,body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    html, body{
+        width: 100%;
         height: 100%;
+        display: flex;
         gap: 5px;
-    } */
+    }
 
     header {
         width: 100%;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .cabeza {
-    background-color: salmon;
-    border: 1px solid black;
-    width: 400px;
-    height: 40px;
-    /* position: relative; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-
-    .arriba{
-        display: flex;
-        position: relative;
-        align-items: center;
-    }
-
-    main{
-        /* border: 1px solid black; */
-        width: 100%;
-        height: 300px; /* si le doy mas se separa del pie */
-        
-    }
-    .container{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        gap: 5px;
-    }
-    .caja{
-        width: 30px;
-        border: 1px solid black;
-        width: 100%;
-        height: 99px;
-    }
-    .caja1{
-        background-color: red;
-        font-size: 70px;
-    }
-    .caja2{
-        background-color: skyblue;
-        font-size: 70px;
-        display: flex;
-        justify-content: center;
-    }
-    .caja3{
-        background-color: red;
-        font-size: 70px;
-        padding-left: 90%;
-        
-    }
-    footer{
-        /* border: 1px solid black; */
-        width: 100%;
-        height: 75px;
-        
-    }
-
-    .final{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-    .f{
-        border: 1px solid black; 
-        width: 100%;
-        height: 35px;
-    }
-    .pie1{
-        background-color: yellow;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .pie2{
-        background-color: yellow;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-}
-/* Small (sm) – 576px o más */
-@media (min-width: 576px) {
-    /* html,body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        gap: 5px;
-    } */
-
-    header {
-        width: 100%;
-        height: 40px;
+        height: 10%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -154,8 +50,8 @@ html,body{
     .cabeza {
     background-color: salmon;
     /* border: 1px solid black; */
-    width: 400px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     /* position: relative; */
     display: flex;
     align-items: center;
@@ -163,6 +59,8 @@ html,body{
     }
 
     .arriba{
+        width: 100%;
+        height: 100%;
         display: flex;
         position: relative;
         align-items: center;
@@ -171,12 +69,13 @@ html,body{
     main{
         /* border: 1px solid black; */
         width: 100%;
-        height: 300px; /* si le doy mas se separa del pie */
+        height: 70%; /* si le doy mas se separa del pie */
+        display: flex;
         
     }
     .container{
-        display: grid;
-        grid-template-columns: repeat(2, 190px);
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: 100%;
         gap: 5px;
@@ -185,77 +84,209 @@ html,body{
         width: 30px;
         /* border: 1px solid black; */
         width: 100%;
-        height: 99px;
+        height: 100px;
     }
     .caja1{
         background-color: red;
         font-size: 70px;
+        height: 33.3%;
     }
     .caja2{
         background-color: skyblue;
         font-size: 70px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        height: 33.3%;
     }
     .caja3{
         background-color: red;
         font-size: 70px;
-        /* padding-left: 90%; */ 
-        /* ↑ no tocar */
+        padding-left: 92%;
+        height: 33.3%;
+        display: flex;
+        align-items: center;
     }
     footer{
         /* border: 1px solid black; */
         width: 100%;
-        height: 75px;
+        height: 20%;
         
     }
 
     .final{
         display: flex;
         flex-direction: column;
+        height: 100%;
         gap: 5px;
     }
-    .f{
-        /* border: 1px solid black;  */
+    /* .f{
+        border: 1px solid black; 
         width: 100%;
-        height: 35px;
-    }
+    } */
     .pie1{
         background-color: yellow;
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 50%;
     }
     .pie2{
         background-color: yellow;
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 50%;
     }
-    
-}
 
-/* Medium (md) – 768px o más */
-@media (min-width: 768px) {
-    
-/* html,body{
+}
+/* Small (sm) – 576px o más */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    html,body{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100%;
         gap: 5px;
+    }
+
+    header {
+        background-color: rgb(114, 218, 250);
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cabeza {
+    background-color: rgb(114, 218, 250);
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 82%;
+    }
+
+    .arriba{
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        width: 100%;
+    }
+    main{
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 300px; /* si le doy mas se separa del pie */
+        height: 70%;
+        
+        
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        width: 100%;
+        height: 100%;
+        
+        gap: 5px;
+    }
+   /*  .caja{
+        
+        border: 1px solid black;
     } */
+    .caja1{
+        background-color: red;
+        font-size: 70px;
+        /* width: 33.3%; */
+        display: flex;
+        align-items: center;
+        
+    }
+    .caja2{
+        background-color: rgb(219, 143, 92);
+        font-size: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 33.3%; */
+        padding-left: 85%;
+        
+    }
+    .caja3{
+        background-color: green;
+        font-size: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 201%;
+        /* height: 100%; */
+        /* padding-left: 90%; */ 
+        /* ↑ no tocar */
+    }
+    footer{
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 20%;
+        
+    }
+
+    .final{
+        display: flex;
+        flex-direction: column;
+        /* gap: 5px; */
+        height: 100%;
+        gap: 5px;
+    }
+
+    .pie1{
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+    }
+    .pie2{
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+    }
+    
+}
+
+/* Medium (md) – 768px o más */
+@media (min-width: 768px) {
+
+html,body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+    }
 
     header {
         width: 100%;
-        height: 40px;
+        height: 10%;
         display: flex;
         align-items: center;
         /* justify-content: center; */
     }
     
     .arriba{
+        width: 100%;
+        height: 100%;
         display: flex;
         position: relative;
         align-items: center;
@@ -263,23 +294,25 @@ html,body{
 
     .cabeza {
     background-color: green;
-    border: 1px solid black;
-    width: 615px;
-    height: 40px;
+    
+    width: 100%;
+    height: 100%;
     /* position: relative; */
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     }
 
     h1{
-        padding-right: 70%;
+        /* padding-right: 70%; */
+        width: 95%;
     }
 
     main{
-        border: 1px solid rgb(68, 24, 224);
-        /* width: 100%; */
-        height: 500px; /* si le doy mas se separa del pie */
+        
+        width: 100%;
+        height: 70%; /* si le doy mas se separa del pie */
+
     }
 
     .container{
@@ -290,16 +323,17 @@ html,body{
         /* position: relative; */
         width: 100%;
         height: 100%;
-        /* gap: 5px; */
+        gap: 10px;
     }
 
     .caja1{
         background-color: red;
         font-size: 70px;
-        height: 300px;
+        height: 100%;
         display: flex;
         justify-content: center;
         /* margin-right: 50px; */
+        width: 33.3%;
     }
 
     .caja2{
@@ -308,7 +342,8 @@ html,body{
         display: flex;
         justify-content: center;
         /* align-items: center; */
-        height: 380px;
+        width: 33.3%;
+        height: 100%;
         /* padding-left: 150px; */
     }
 
@@ -318,33 +353,35 @@ html,body{
         display: flex;
         justify-content: center;
         /* align-items: center; */
-        height: 300px;
+        height: 100%;
+        width: 33.3%;
     }
 
-    footer{
-        border: 1px solid black;
+    footer{/* 
+        border: 1px solid black; */
         width: 100%;
-        height: 75px;
+        height: 20%;
         
     }
 
     .final{
         display: flex;
-        flex-direction: column;
-        gap: 5px;
+        
+        gap: 20px;
+        height: 100%;
+
     }
 
-    .f{
-        /* border: 1px solid black;  */
-        width: 100%;
-        height: 35px;
-    }
+  
 
     .pie1{
         background-color: yellow;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 50%;
+        height: 100%;
+        font-size: 30px;
     }
 
     .pie2{
@@ -352,7 +389,11 @@ html,body{
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100%;
+        width: 50%;
+        font-size: 30px;
     }
+
     
 }
 /* Large (lg) – 992px o más */

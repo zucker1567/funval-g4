@@ -15,9 +15,7 @@
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-amber-800: oklch(47.3% 0.137 46.201);
-    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-cyan-400: oklch(78.9% 0.154 211.53);
-    --color-sky-500: oklch(68.5% 0.169 237.323);
     --color-indigo-950: oklch(25.7% 0.09 281.288);
     --color-purple-500: oklch(62.7% 0.265 303.9);
     --color-purple-800: oklch(43.8% 0.218 303.724);
@@ -195,9 +193,6 @@
       max-width: 96rem;
     }
   }
-  .m-0 {
-    margin: calc(var(--spacing) * 0);
-  }
   .box-border {
     box-sizing: border-box;
   }
@@ -213,44 +208,29 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
-  }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
-  }
-  .h-30 {
-    height: calc(var(--spacing) * 30);
-  }
   .h-50 {
     height: calc(var(--spacing) * 50);
   }
-  .h-70 {
-    height: calc(var(--spacing) * 70);
-  }
-  .h-100 {
-    height: calc(var(--spacing) * 100);
-  }
-  .h-150 {
-    height: calc(var(--spacing) * 150);
-  }
-  .h-200 {
-    height: calc(var(--spacing) * 200);
-  }
-  .h-300 {
-    height: calc(var(--spacing) * 300);
-  }
-  .h-500 {
-    height: calc(var(--spacing) * 500);
+  .h-\[2px\] {
+    height: 2px;
   }
   .h-\[10\%\] {
     height: 10%;
   }
+  .h-\[10px\] {
+    height: 10px;
+  }
+  .h-\[15px\] {
+    height: 15px;
+  }
   .h-\[20\%\] {
     height: 20%;
   }
-  .h-\[25\%\] {
-    height: 25%;
+  .h-\[20px\] {
+    height: 20px;
+  }
+  .h-\[50px\] {
+    height: 50px;
   }
   .h-\[70\%\] {
     height: 70%;
@@ -258,29 +238,47 @@
   .h-\[100\%\] {
     height: 100%;
   }
-  .h-full {
-    height: 100%;
+  .h-\[230px\] {
+    height: 230px;
   }
-  .h-min {
-    height: min-content;
+  .h-\[250px\] {
+    height: 250px;
+  }
+  .h-\[330px\] {
+    height: 330px;
+  }
+  .h-\[350px\] {
+    height: 350px;
+  }
+  .h-\[530px\] {
+    height: 530px;
+  }
+  .h-\[550px\] {
+    height: 550px;
+  }
+  .h-\[730px\] {
+    height: 730px;
+  }
+  .h-\[750px\] {
+    height: 750px;
+  }
+  .h-\[760px\] {
+    height: 760px;
+  }
+  .h-\[790px\] {
+    height: 790px;
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
-  }
   .w-\[15\%\] {
     width: 15%;
   }
-  .w-\[25\%\] {
-    width: 25%;
+  .w-\[99\%\] {
+    width: 99%;
   }
-  .w-\[55\%\] {
-    width: 55%;
+  .w-\[99\.9\%\] {
+    width: 99.9%;
   }
   .w-full {
     width: 100%;
@@ -313,78 +311,25 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-0 {
-    border-style: var(--tw-border-style);
-    border-width: 0px;
-  }
   .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
-  .border-4 {
-    border-style: var(--tw-border-style);
-    border-width: 4px;
-  }
-  .border-5 {
-    border-style: var(--tw-border-style);
-    border-width: 5px;
-  }
-  .border-50 {
-    border-style: var(--tw-border-style);
-    border-width: 50px;
   }
   .border-solid {
     --tw-border-style: solid;
     border-style: solid;
   }
-  .border-amber-100 {
-    border-color: var(--color-amber-100);
-  }
-  .border-amber-200 {
-    border-color: var(--color-amber-200);
-  }
   .border-amber-300 {
     border-color: var(--color-amber-300);
-  }
-  .border-amber-400 {
-    border-color: var(--color-amber-400);
-  }
-  .border-amber-500 {
-    border-color: var(--color-amber-500);
   }
   .border-amber-700 {
     border-color: var(--color-amber-700);
   }
-  .border-cyan-400 {
-    border-color: var(--color-cyan-400);
-  }
-  .border-purple-500 {
-    border-color: var(--color-purple-500);
-  }
-  .border-b-amber-800 {
-    border-bottom-color: var(--color-amber-800);
-  }
-  .border-b-purple-800 {
-    border-bottom-color: var(--color-purple-800);
-  }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
   .bg-indigo-950 {
     background-color: var(--color-indigo-950);
   }
-  .p-0 {
-    padding: calc(var(--spacing) * 0);
-  }
   .text-amber-50 {
     color: var(--color-amber-50);
-  }
-  .text-amber-200 {
-    color: var(--color-amber-200);
   }
   .text-gray-800 {
     color: var(--color-gray-800);
