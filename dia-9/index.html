@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="todo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="h-screen flex items-center justify-center dark:bg-slate-600 flex-col
+    bg-[url(https://lumiere-a.akamaihd.net/v1/images/anakin-skywalker-main_23e5105b.jpeg?region=387%2C27%2C1350%2C760)]
+    bg-center bg-cover  dark:bg-[url(https://saberspro.com/cdn/shop/articles/anakin.jpg?v=1750086089&width=2048)]"
+    >
+    <h1 class="text-white dark:text-black">hola mundo</h1>
+    <button class="bg-blue-600 rounded-2xl p-4 text-white" id="btn">
+        cambio de tema
+
+    </button>
+    <img src="" alt="">
+    <img src="" alt="">
+    
+    <script>
+        let botonCambio = document.querySelector("#btn");
+        let todo = document.querySelector("#todo");
+        /* let darkvader = document.querySelector()
+        let anakin = document.querySelector() */
+        botonCambio.addEventListener("click",function () {
+            todo.classList.toggle("dark");
+        });
+
+    </script>
+</body>
+</html>
