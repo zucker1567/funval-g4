@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-white shadow-md p-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="text-xl font-bold text-gray-800">Mi Sitio</div>
+      <button id="menu-toggle" class="md:hidden text-gray-800 focus:outline-none">
+        <!-- Icono tipo hamburguesa -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+
+      <ul id="menu" class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <li><a href="#" class="hover:text-blue-600">Inicio</a></li>
+        <li><a href="#" class="hover:text-blue-600">Servicios</a></li>
+        <li><a href="#" class="hover:text-blue-600">Contacto</a></li>
+        <li><a href="#" class="hover:text-blue-600">Sobre Nosotros</a></li>
+      </ul>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden mt-2 space-y-2 text-gray-700 font-medium">
+      <a href="#" class="block px-2 hover:text-blue-600">Inicio</a>
+      <a href="#" class="block px-2 hover:text-blue-600">Servicios</a>
+      <a href="#" class="block px-2 hover:text-blue-600">Contacto</a>
+      <a href="#" class="block px-2 hover:text-blue-600">Sobre Nosotros</a>
+    </div>
+  </nav>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

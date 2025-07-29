@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" id="todos">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <script src="./main.js" defer type="module"></script>
+    <link rel="stylesheet" href="./output.css">
+    
+</head>
+<body class="dark:bg-slate-800">
+      <header class="border-black dark:border-white w-full p-4 shadow-xs bg-white dark:bg-slate-500 border-b">
+<!-- SWITCH -->
+   <label class="max-w-screen-xl relative inline-flex items-center cursor-pointer">
+       <input type="checkbox" id="btn" class="sr-only peer" />
+       <div class="w-11 h-6 bg-gray-300 rounded-full peer dark:bg-gray-600 peer-checked:bg-gray-300 transition-colors">
+       </div>
+       <div class="absolute left-0.5 top-0.5 w-5 h-5 bg-white rounded-full transition-transform peer-checked:translate-x-full peer-checked:bg-gray-800">
+       </div>
+   </label>
+    <nav class="flex justify-between items-center p-4 rounded-2xl">
+      <button class="md:hidden text-black p-3 rounded-2xl hover:text-white active:bg-amber-100 active:text-black">
+        <svg class="w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+        </svg>
+      </button>
+      <ul class="text-black dark:text-white  hidden md:flex gap-3 2xl:gap-8 text-sm md:text-base lg:text-lg">
+        <li class="cursor-pointer p-3 rounded-2xl hover:bg-white active:bg-amber-100 active:text-black"><a href="./index.html">Acerca de Mi.</a></li>
+        <li class="cursor-pointer p-3 rounded-2xl hover:bg-white active:bg-amber-100 active:text-black"> <a href="./index.html">Habilidades</a></li>
+        <a href="http://127.0.0.1:5500/proyecto2/index.html#hbdes"class="cursor-pointer p-3 rounded-2xl hover:bg-white active:bg-amber-100 active:text-black">Proyectos</a>
+      </ul>
+    </nav>
+  </header>
+  <main class="w-full flex flex-col gap-5 justify-between items-center ">
+    <div class="grid grid-cols-2 p-6 gap-8" id="contenedor-proyectos">ñ
+    
+    
+    </div>
+
+    <div id="background" style="width: 900px; height: 750px; border: 3px solid black; ">
+            <div id='gatito' style='position:absolute; top:150px; left:150px; background: url("img/abajo1.png") no-repeat; width:60px; height:50px; background-size: contain;'></div>
+            
+        </div>
+            <script type="text/javascript">
+            var posicionIzq = 150;
+            var posicionArriba = 150;
+            var movimiento = 1;
+            document.onkeydown = function(e){
+                console.log(e);
+                if (movimiento == 1){
+                    movimiento = 2;
+                }
+                else if (movimiento == 2){
+                    movimiento = 1;
+                }
+                if(e.keyCode == 37){
+                    // Izquierda
+                    posicionIzq = posicionIzq - 25;
+                    document.getElementById("gatito").style.left = posicionIzq+"px";
+                    document.getElementById("gatito").style.backgroundImage = "url('gato/izq"+movimiento+".png')";
+                }
+                else if (e.keyCode == 39){
+                    // Derecha
+                    posicionIzq = posicionIzq + 25;
+                    document.getElementById("gatito").style.left = posicionIzq+"px";
+                    document.getElementById("gatito").style.backgroundImage = "url('gato/der"+movimiento+".png')";
+                }
+                else if (e.keyCode == 38){
+                    // Arriba
+                    posicionArriba = posicionArriba - 25;
+                    document.getElementById("gatito").style.top = posicionArriba+"px";
+                    document.getElementById("gatito").style.backgroundImage = "url('gato/arriba"+movimiento+".png')";
+                }
+                else if (e.keyCode == 40){
+                    // Abajo
+                    posicionArriba = posicionArriba + 25;
+                    document.getElementById("gatito").style.top = posicionArriba+"px";
+                    document.getElementById("gatito").style.backgroundImage = "url('gato/abajo"+movimiento+".png')";
+                }
+            }
+        </script>
+  </main>
+</body>
+</html>

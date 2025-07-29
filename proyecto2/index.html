@@ -9,46 +9,49 @@
     <script src="./main.js" defer type="module"></script>
 </head>
 <body  class="dark:bg-black dark:text-white">
-    <header class="  bg-amber-300 pt-2 flex items-center justify-center bg-linear-to-b w-full dark:bg-indigo-950 ">
+    <header class="bg-amber-300 pt-2 flex items-center justify-center bg-linear-to-b w-full dark:bg-indigo-950 ">
         
-        <nav class="flex w-full justify-between  p-2   text-black items-center ">
-            <svg id="menu-btn" class="w-6 h-6  text-black dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24
-            absolute flex justify-cente">
+        <nav class="flex w-full justify-between  p-2  text-black items-center">
+            <svg id="menu-btn" class="w-6 h-6  text-black dark:text-white sm:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6H6m12 4H6m12 4H6m12 4H6"/>
             </svg>
-            <ul id="menu-list" class=" flex-row list-none hidden sm:flex sm:absolute pl-10 sm:w-[90%] gap-3 dark:text-white
-            transition-all duration-300 overflow-hidden max-h-0 sm:max-h-none sm:flex-col">
-                <li class="">Acerca de mi</li>
-                <li>Habilidades</li>
-                <li>Proyectos</li>
+            <div class=" text-amber-50 hidden md:flex rounded-2xl border-1 p-1 border-cyan-500">
+                Rm
+            </div>
+            <ul id="menu-list" class="flex-row list-none hidden sm:flex sm:absolute pl-10 sm:w-[90%] gap-3 dark:text-white
+            ">
+                <li><a href="#sobre-mi">Acerca de mi</a></li>
+                <li><a href="#hbdes">Habilidades</a></li>
+                <li><a href="./proyectos.html" target="_blank">Proyectos</a></li>
             </ul>
-            <h2 class="text-[18px] flex justify-center sm:hidden "> <strong class="dark:text-white">Romo </strong></h2>
-            <button class=" border-1 rounded-2xl p-2  flex items-center hover:bg-gray-100  dark:text-black bg-amber-50">
+            <h2 class="text-[18px] flex justify-center sm:hidden"> <strong class="dark:text-white">Romo </strong></h2>
+            <button class="border-1 rounded-2xl p-2 flex items-center hover:bg-gray-100 dark:text-black bg-amber-50">
                     <a href="https://www.instagram.com/j.romo._/" target="_blank" >contactame</a>
                     <img src="./img/user_5323678.png" alt="" width="20px" 
                     class="rounded-full ">
             </button>
         </nav>
     </header>
-    <main >
-        <section  >
-            <div ></div>
-            <div  class=" items-center justify-center bg-amber-100 dark:bg-gray-900">
+    <main>
+        <section>
+            <div></div>
+            <div  class="items-center justify-center bg-amber-100 dark:bg-gray-900">
                 <h1 class="flex justify-center w-screen pt-10 text-3xl">    
                     Hola! Soy Johan Rodriguez <br> 
                     Desarrollador Full Stack
                 </h1>
-                <div class=" flex items-center justify-center">
+                <div class="flex items-center justify-center">
                 <img src="./jhn.png" alt="" width="300px" class="opacity-90" >
-                <button class="absolute rounded-2xl bg-amber-500 p-2 mt-90 hover:bg-amber-700">Mis Proyectos</button>
+                <button class="absolute rounded-2xl bg-amber-500 p-2 mt-90 hover:bg-amber-700">
+                    <a href="./proyectos.html" target="_blank">Mis Proyectos</a></button>
                 </div>
             </div>
             <div></div>
         </section>
 
-        <section class="bg-lime-300 w-full dark:bg-slate-800">
+        <section class="bg-lime-300 w-full dark:bg-slate-800" id="sobre-mi">
             <div class=" flex items-center  flex-col h-110 pt-9 ">
-                <h2 class="text-2xl">¿Quien Soy?</h2>
+                <h2 class="text-2xl" >¿Quien Soy?</h2>
                 <p class="w-screen text-center">
                     <span>
                         soy un adulto de 25 años <br> apasionado por la tecnologia, <br>sus sistemas basicos 
@@ -60,18 +63,17 @@
                         a largo <br> tiempo, más adelante voy a profundizar más los temas <br> adquiriendo 
                     </span>
                     <span>
-                        conocimiento, añadiendo nuevas capacidades,<br>  fortalezas etc. Este es un mundo
+                        conocimiento y añadiendo nuevas capacidades,<br>  fortalezas etc. Este es un mundo
                     </span>
                     <span>
                         grande y explorarlo es la<br> idea, pero mi base principal sera el de desarrollador.
                     </span>
                 </p>
-                <button class="relative rounded-2xl bg-amber-500 p-2 hover:bg-amber-700
-                    "
-                    >Mis Proyectos</button>
+                <button class="relative rounded-2xl bg-amber-500 p-2 hover:bg-amber-700"
+                    ><a href="./proyectos.html" target="_blank">Mis Proyectos</a></button>
             </div>
             <div >
-                <h2 class="text-center">Mis Habilidades</h2>
+                <h2 class="text-center" id="hbdes">Mis Habilidades</h2>
                 <div class="  w-screen gap-5 flex flex-col items-center lg:flex-row justify-center
                 ">
                     <div class="grid grid-cols-2 w-screen order-2 sm:w-[70%] lg:order-1

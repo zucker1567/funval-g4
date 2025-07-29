@@ -11,7 +11,7 @@ do {
             let ingreso = parseFloat(prompt("¿Cuánto deseas ingresar?"));
         if (!isNaN(ingreso) && ingreso > 0) {
             saldo += ingreso;
-            alert("Ingreso exitoso. Nuevo saldo: $" + saldo);
+            alert("Ingreso exitoso. Nuevo salgo: $" + saldo);
         } else {
             alert("Cantidad inválida.");
         }
